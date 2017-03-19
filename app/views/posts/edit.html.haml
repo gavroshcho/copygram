@@ -1,0 +1,7 @@
+.image.center-block
+  = image_tag @post.image.url(:medium), class: 'img-responsive'
+= render 'form'
+.text-center
+  = link_to "Delete Post",post_path(@post), method: :delete, data: {confirm: "Are you sure ?"}
+  |
+  = link_to "cancel", posts_path

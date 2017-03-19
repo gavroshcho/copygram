@@ -2,10 +2,14 @@
   .post
     .post-head
       .name
-        Ben Walker
+        = @post.user.user_name
     .image.center-block
       =image_tag @post.image.url(:medium), class: 'img-responsive'
     %p.caption
       =@post.caption
-    .text-center
-      =link_to "Cancel", posts_path
+    .text-center.edit-links
+      = link_to "Cancel", posts_path
+      - if @post.user.id == current_user.id
+        |
+        = link_to "Edit Post", edit_post_path(@post)
+

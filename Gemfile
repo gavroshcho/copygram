@@ -14,6 +14,7 @@ gem 'haml'
 gem "paperclip", "~> 5.0.0"
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
