@@ -15,6 +15,7 @@ gem "paperclip", "~> 5.0.0"
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+gem 'kaminari', :git => "git://github.com/amatsuda/kaminari.git", :branch => 'master'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
