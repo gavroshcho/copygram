@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get 'unlike'
     end
   end
+  get 'browse', to: 'posts#browse', as: :browse_posts 
   root "posts#index"
   get ':user_name', to: "profiles#show", as: :profile
   get ':user_name/edit',to: "profiles#edit", as: :edit_profile
